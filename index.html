@@ -3,8 +3,8 @@
 <link rel="icon" href="larry.jpg">
 	<script> 
 		for(var i=0;i<100000;i++){	
-			setTimeout(function(){document.getElementById("larry").src="e1.jpg";}, (100*i));
-			setTimeout(function(){document.getElementById("larry").src="e2.jpg";}, (100*i)+50);
+			setTimeout(function(){document.getElementById("larry").src="e1.jpg";document.body.style.backgroundColor = "white";}, (100*i));
+			setTimeout(function(){document.getElementById("larry").src="e2.jpg";document.body.style.backgroundColor = "black";}, (100*i)+50);
 		}
 	</script>
 </head>
