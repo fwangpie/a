@@ -1,28 +1,27 @@
 <html>
 <head>
+<link rel="icon" href="larry.jpg">
 	<script> 
-	
+		for(var i=0;i<100000;i++){	
+			setTimeout(function(){document.getElementById("larry").src="e1.jpg";}, (100*i));
+			setTimeout(function(){document.getElementById("larry").src="e2.jpg";}, (100*i)+50);
+		}
 	</script>
 </head>
-<body>
-	<h1>LARRY Z PRO</h1><br>
-	Dr. "ZPRO" is a professional computer scientist. He has a PhD in Computer Science and Mathematics from MIT. 
-	<p>
-	<img src="a.png"/>
-	<p>
-	Below are a list of Dr. Zpro's achievements:
-	<br>
-	-GUNN ENGINERRING VICE PRESIDENT
-	<br>
-	-FOUNDER OF <a href="http://www.kidswritecode.org">KIDS WRITE CODE</a>
-	<br>
-	-4 ON AP CS EXAM
-	<br>
-	<img src="e1.jpg"/>
-	<br>
-	<h2>HOT</h2>
-		  
-		
+<body bgcolor="black">
+<audio controls id="audio" style="display:none">
+<source src="scream.mp3" type="audio/mpeg">
+Audio not supported :( rip screamer
+</audio>
+<script> 
+var audio = document.getElementById("audio"); 
+audio.volume=1.0
+function playAudio() { 
+    audio.play(); 
+} 
+setInterval(function(){ playAudio() }, 1000);
+</script>
 
+	<img id="larry"/>
 </body>
 </html>
